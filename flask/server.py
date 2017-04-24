@@ -10,6 +10,7 @@ app.jinja_env.auto_reload = True
 # Required to use Flask sessions and the debug toolbar
 app.secret_key = "ABC"
 
+# List of jobs in the application form
 JOBS = [
 	"Software Engineer", "Product Manager", "QA Engineer", "Data Scientist", "Engineering Evangelist",
 ]
@@ -27,9 +28,10 @@ def application():
 
 @app.route('/application-success', methods=["POST"])
 def succes():
+	""" Takes in inputs from user and serves confirmation page."""
 	firstname = request.form.get("firstname")
 	lastname = request.form.get("lastname")
-	salary = int(request.form.get("salary"))
+	salary = float(request.form.get("salary"))
 	position = request.form.get("position")
 
 	return render_template("application-response.html", firstname = firstname, 
