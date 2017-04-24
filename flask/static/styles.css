@@ -1,0 +1,31 @@
+/* Your CSS goes here */
+
+#lastname {
+	font-weight: bold;
+}
+
+div {
+	font-family: 'Work Sans', sans-serif;
+}
+
+h1 {
+	font-family: 'Work Sans', sans-serif;
+}
+
+p {
+	font-family: 'Work Sans', sans-serif;
+	border: 1px solid black;
+	padding: 10px;
+}
+
+.btn {
+	background-color:#fffdb5;
+}
+
+.form-control {
+	background-color:#fffdb5;
+}
+
+/*.response {
+	font-size: 200%;
+}*/

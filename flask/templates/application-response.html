@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Response Page{% endblock %}
+
+{% block content %}
+	<div>
+		<h1 class="text-center">This is the sample home page.</h1>
+	</div>
+	<div class="col-md-8 col-md-offset-2 response">
+		Thank you, {{ firstname }} {{ lastname }}, for applying to be a {{ position }}. Your
+minimum salary requirement is ${{ "{:,}".format(salary) }}.
+	</div>
+
+{% endblock %}

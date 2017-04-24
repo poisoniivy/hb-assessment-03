@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700" rel="stylesheet">
+    <title>Application Form</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<h1 class="col-md-8 .col-md-offset-2 text-center">Oh, The Places You'll Go!</h1>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-8 text-center">
+			<p>You have brains in your head.<br>
+				You have feet in your shoes.<br>
+				You can steer yourself <br>
+				any direction you choose. <br>
+				You're on your own. And you know what you know.<br>
+				And YOU are the guy who'll decide where to go.<br><br>
+				Please enter in your info and let's see what happens!</p>
+			</div>
+		</div>
+
+		<form method="POST" action="/application-success">
+			<div class="row">
+				<div class="col-md-4 .col-md-offset-2 form-group">
+		        	<label for="field-name">First Name</label>
+		        	<input type="text" class="form-control" name="firstname" placeholder="First Name">
+		       	</div>
+		       	<div class="col-md-4 .col-md-offset-2 form-group" id="lastname">
+		        	<label for="field-name">Last Name</label>
+		        	<input type="text" class="form-control" name="lastname" placeholder="Last Name">
+		       	</div>
+		    </div>
+		    <div class="row">
+		       	<div class="col-md-4 .col-md-offset-2 form-group">
+		        	<label for="field-name">Salary Requirement</label>
+		        	<input type="number" class="form-control" name="salary" min="0" placeholder="Salary">
+		       	</div>
+		    </div>
+		    <div class="row">
+			    <div class="col-md-4 .col-md-offset-2 form-group">
+		        	<label for="field-name">Position you are applying for:</label>
+		        	<select name="position" class="form-control">
+		        		<option value= " " disable selected> Position</option>
+		        		<option value="software_engineer">Software Engineer</option>
+		        		<option value="qa_engineer">QA Engineer</option>
+		        		<option value="product_manager">Product Manager</option>
+		       		</select>
+		       	</div>
+		    </div>
+	       	<div>
+	       		<button type="submit" class="btn btn-default">Submit</button>
+	       	</div>
+	    </form>
+
+    </div>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
